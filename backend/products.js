@@ -17,7 +17,7 @@ export const products = [
     },
     {
         id: 2,
-        img: "https://placedog.net/500",
+        img: "https://placedog.net/200",
         name: "Basic T-Shirt",
         featuresOne: "CardBoard Box",
         featuresTwo: "Unisex Short Sleeve T-Shirt",
@@ -31,7 +31,7 @@ export const products = [
     },
     {
         id: 3,
-        img: "https://placedog.net/500",
+        img: "https://placedog.net/300",
         name: "Woman Bottle",
         featuresOne: "CardBoard Box",
         featuresTwo: "Unisex Short Sleeve T-Shirt",
