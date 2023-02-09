@@ -1,12 +1,17 @@
 import Box from '@mui/material/Box';
 import { productsApi, useGetAllProductsQuery } from '../features/products/productsApi';
 //import { useSelector } from 'react-redux'; este es para cuando se usa solamente axios y no rtk
-
+import { useDispatch } from 'react-redux';
+import {addToCart} from '../features/products/cartSlice'
 
 function Home() {
  // const {items, status} = useSelector(state=>state.products) este es para cuando se usa solamente axios y no rtk
  const {data, error, isLoading}= useGetAllProductsQuery()
+const dispatch = useDispatch()
 
+ const handleAddToCart = product => {
+dispatch(addToCart(product))
+ }
 
  return (
     <Box
@@ -77,7 +82,9 @@ border:'none',
 outline:'none',
 cursor: 'pointer',
 letterSpacing: '1.5px'
-            }}>
+            }}
+            onClick={()=>handleAddToCart(product)}
+            >
               Add to cart
               </button>
              </Box>)}
