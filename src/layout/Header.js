@@ -7,8 +7,12 @@ import Box from '@mui/material/Box';
 import Input from '@mui/material/Input';
 //import {Link} from 'react-router-dom';
 import Link from '@mui/material/Link';
+import { useSelector } from 'react-redux';
 
 function Header() {
+
+  const { cartTotalQuantity } = useSelector(state => state.cart)
+
   return (
 
 
@@ -51,48 +55,66 @@ function Header() {
                 marginRight: '100px'
               }} />
           </form>
-    
+
         </Box>
         <Box
           sx={{
-            display:'flex',
-            flexDirection:'row',
+            display: 'flex',
+            flexDirection: 'row',
             justifyContent: 'flex-end'
           }}>
           <Box
-          sx={{
-            display:'flex',
-            flexDirection:'row',
-            alignItems:'center'
-          }}
+            sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center'
+            }}
           >
             <Box
               sx={{
-                margin:'0px 10px'
+                margin: '0px 10px'
               }}
             >
-            <img src={user} alt="user icon" />
+              <img src={user} alt="user icon" />
             </Box>
-            
+
             <Link href="/signin" underline="none" color="#ffffff">Sign in</Link>
           </Box>
           <Box
-           sx={{
-            display:'flex',
-            flexDirection:'row',
-            alignItems:'center'
-          }}
+            sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center'
+            }}
           >
             <Box
-            sx={{
-              margin:'0px 10px'
-            }}
+              sx={{
+                margin: '0px 10px'
+              }}
             >
-            <img src={bag} alt="bag icon" />
-            </Box>          
-            <Link  href="/cart" underline="none" color="#ffffff" >Cart</Link>
+              <img src={bag} alt="bag icon" />
+             
+            </Box>
+            
+            <Link href="/cart" underline="none" color="#ffffff" >Cart</Link>
+            <Box sx={{
+                borderRadius:'50%',
+                backgroundColor:'yellow',
+                width:'30px',
+                height:'30px',
+                marginLeft: '5px'
+              }}>
+                <Box sx={{
+                  display:'flex',
+                  justifyContent:'center',
+                  alignItems:'center',
+                
+                  width: '30px',
+                  height:'30px'
+                }}>{cartTotalQuantity}</Box>
+              </Box>
           </Box>
-          </Box>
+        </Box>
       </Box>
       <NavBar />
     </Box>

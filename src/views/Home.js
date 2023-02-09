@@ -2,15 +2,18 @@ import Box from '@mui/material/Box';
 import { productsApi, useGetAllProductsQuery } from '../features/products/productsApi';
 //import { useSelector } from 'react-redux'; este es para cuando se usa solamente axios y no rtk
 import { useDispatch } from 'react-redux';
-import {addToCart} from '../features/products/cartSlice'
+import {addToCart} from '../features/products/cartSlice';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
  // const {items, status} = useSelector(state=>state.products) este es para cuando se usa solamente axios y no rtk
  const {data, error, isLoading}= useGetAllProductsQuery()
 const dispatch = useDispatch()
+const navigate = useNavigate()
 
  const handleAddToCart = product => {
 dispatch(addToCart(product))
+navigate('/cart')
  }
 
  return (

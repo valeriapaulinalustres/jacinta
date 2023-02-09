@@ -4,13 +4,8 @@ export const products = [
     {
         id: 1,
         img: "https://placedog.net/500",
-        name: "My Christmas Pack",
-        featuresOne: "CardBoard Box",
-        featuresTwo: "Unisex Short Sleeve T-Shirt",
-        featuresThree: "Bassic Bottle",
-        featuresOneOption: "(container)",
-        featuresTwoOption: "(Green, Small)",
-        featuresThreeOption: "(Blue)",
+        name: "Doggy One",
+        featuresOne: "Really cute",
         minPrice: 71.20,
         maxPrice: 80,
         minimun: 50
@@ -18,13 +13,8 @@ export const products = [
     {
         id: 2,
         img: "https://placedog.net/200",
-        name: "Basic T-Shirt",
-        featuresOne: "CardBoard Box",
-        featuresTwo: "Unisex Short Sleeve T-Shirt",
-        featuresThree: "Bassic Bottle",
-        featuresOneOption: "(container)",
-        featuresTwoOption: "(Green, Small)",
-        featuresThreeOption: "(Blue)",
+        name: "Doggy Two",
+        featuresOne: "Really cute",
         minPrice: 13.50,
         maxPrice: 80,
         minimun: 10
@@ -32,13 +22,35 @@ export const products = [
     {
         id: 3,
         img: "https://placedog.net/300",
-        name: "Woman Bottle",
-        featuresOne: "CardBoard Box",
-        featuresTwo: "Unisex Short Sleeve T-Shirt",
-        featuresThree: "Bassic Bottle",
-        featuresOneOption: "(container)",
-        featuresTwoOption: "(Green, Small)",
-        featuresThreeOption: "(Blue)",
+        name: "Doggy Three",
+        featuresOne: "Really cute",
+        minPrice: 36.50,
+        maxPrice: 80,
+        minimun: 20
+    },
+    {
+        id: 4,
+        img: "https://placedog.net/900",
+        name: "Doggy Four",
+        featuresOne: "Really cute",
+        minPrice: 36.50,
+        maxPrice: 80,
+        minimun: 20
+    },
+    {
+        id: 5,
+        img: "https://placedog.net/390",
+        name: "Doggy Five",
+        featuresOne: "Really cute",
+        minPrice: 36.50,
+        maxPrice: 80,
+        minimun: 20
+    },
+    {
+        id: 6,
+        img: "https://placedog.net/360",
+        name: "Doggy Six",
+        featuresOne: "Really cute",
         minPrice: 36.50,
         maxPrice: 80,
         minimun: 20
