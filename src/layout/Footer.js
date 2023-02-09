@@ -51,6 +51,7 @@ function Footer() {
               fontWeight: 600,
               fontSize: '15px',
               lineHeight: '16px',
+              marginTop:'1rem'
             }}
           >
             <img src={phone} alt="Phone icon" />
@@ -65,7 +66,8 @@ function Footer() {
             {socialNetworks.map(el => (
               <Box
                 sx={{
-                  marginRight: '12px'
+                  marginRight: '12px',
+                  marginTop: '2rem'
                 }}
               >
                 <a href={el.url} key={el.name}>

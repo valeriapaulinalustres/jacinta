@@ -1,6 +1,3 @@
-import ProductsOnSaleContainer from "./ProductsOnSaleContainer"
-import ProductsOnCartContainer from "./ProductsOnCartContainer"
-import Summary from './Summary';
 import { useEffect } from "react";
 import Box from '@mui/material/Box';
 import { useSelector, useDispatch } from "react-redux";
@@ -50,7 +47,7 @@ function Cart() {
           <Link to='/' style={{
             textDecoration: 'none',
             color: 'gray',
-            color: 'gray',
+
             display: 'center',
             marginTop:'1rem'
           }}>
@@ -193,7 +190,6 @@ function Cart() {
                 outline: 'none',
                 color: 'gray',
                 background: '#E6E8E9',
-                outline: 'none',
                 cursor: 'pointer',
                 padding: '8px 5px'
               }}>Check Out</button>
@@ -222,24 +218,3 @@ function Cart() {
 }
 
 export default Cart
-
-{/* <Box
-sx={{
-  margin:'20px 92px'
-}}
->
-  <Box
-  sx={{
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-   
-
-  }}
-  >
-    <ProductsOnCartContainer />
-    <Summary />
-  </Box>
-  <ProductsOnSaleContainer />
-</Box> */}

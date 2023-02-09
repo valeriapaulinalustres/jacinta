@@ -39,7 +39,7 @@ export const products = [
     },
     {
         id: 5,
-        img: "https://placedog.net/390",
+        img: "https://placedog.net/990",
         name: "Doggy Five",
         featuresOne: "Really cute",
         minPrice: 36.50,
